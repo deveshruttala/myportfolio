@@ -1,265 +1,516 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Devesh Ruttala</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Devesh Ruttala — Software Infrastructure Engineer</title>
+  <meta name="description" content="Devesh Ruttala — Software Infrastructure Engineer building scalable backends, distributed video pipelines, and AI-driven tooling with Go, Python and AWS." />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.simpleicons.org">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="default.css">
-	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%97%89%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
-	<section class="s1">
-		<div class="main-container">
-			<div class="greeting-wrapper">
-				<h1>Hi, I'm Devesh Ruttala</h1>
-			</div>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
 
+  <!-- Background grain + glow -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow"></div>
+    <div class="bg-grain"></div>
+  </div>
 
-			<div class="intro-wrapper">
-				<div class="nav-wrapper">
+  <!-- Top nav -->
+  <header class="nav">
+    <a href="#top" class="nav-logo" data-cursor="hover">
+      <span class="logo-mark">◉</span>
+      <span class="logo-text">devesh<span class="serif-i">.r</span></span>
+    </a>
+    <nav class="nav-menu">
+      <a href="#work" data-cursor="hover">Work</a>
+      <a href="#about" data-cursor="hover">About</a>
+      <a href="#stack" data-cursor="hover">Stack</a>
+      <a href="#contact" data-cursor="hover">Contact</a>
+    </nav>
+    <a href="https://www.linkedin.com/in/devesh-ruttala/" target="_blank" rel="noopener" class="nav-resume magnetic" data-cursor="hover">
+      <span>Let's talk</span>
+      <span class="dot-live"></span>
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu" data-cursor="hover">
+      <span></span><span></span>
+    </button>
+  </header>
 
-					<!-- Link around dots-wrapper added after tutorial video -->
-					<a href="index.html">
-						<div class="dots-wrapper">
-							<div id="dot-1" class="browser-dot"  ></div>
-							<div id="dot-2" class="browser-dot"> </div>
-							<div id="dot-3" class="browser-dot"></div>
-						</div>
-					</a>
-					
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero">
+    <div class="hero-grid">
+      <div class="hero-meta">
+        <span class="meta-line"></span>
+        <span class="meta-text">001 / Portfolio · 2026</span>
+      </div>
 
-					<ul id="navigation">
-						<li><a href="index.html#contact">Contact</a></li>
-						<li><a href="index.html#works">Works</a></li>
-					</ul>
-				</div>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span>Hey, I'm Devesh —</span></span>
+        <span class="reveal-line"><span>a <em class="serif-i">software infrastructure</em></span></span>
+        <span class="reveal-line"><span>engineer crafting</span></span>
+        <span class="reveal-line"><span><em class="serif-i">resilient</em> systems.</span></span>
+      </h1>
 
-				<div class="left-column">
-					<img id="profile_pic" src="images/devesh1.jpg"  >
+      <div class="hero-photo">
+        <div class="photo-wrap" data-cursor="view">
+          <img src="assets/profile.png" alt="Devesh Ruttala" />
+          <div class="photo-badge">
+            <svg viewBox="0 0 100 100"><defs><path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/></defs><text><textPath href="#circlePath">SHIPPING · CODE · SINCE · 2022 ·  </textPath></text></svg>
+            <div class="badge-dot">◉</div>
+          </div>
+        </div>
+      </div>
 
-					<h5 style="text-align: center;line-height: 0;">My Portfolio</h5>
+      <div class="hero-foot">
+        <div class="hero-foot-block">
+          <span class="kbd">scroll</span>
+          <span class="arrow-down">↓</span>
+        </div>
+        <p class="hero-bio">
+          Backend & SRE engineer who lives inside Go services, Python pipelines
+          and AWS dashboards. Currently at <a href="#work" data-cursor="hover">Fox Corporation</a> wrangling
+          large-scale video infra.
+        </p>
+        <div class="hero-foot-block right">
+          <span class="now-dot"></span>
+          <span>Available · May 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-						<div data-mode="green" id="green-mode" class="theme-dot"></div>
-						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-					</div>
+  <!-- ============ MARQUEE ============ -->
+  <section class="marquee" aria-label="Tech stack">
+    <div class="marquee-track">
+      <!-- duplicated for seamless loop -->
+      <div class="marquee-row">
+        <span><em class="serif-i">Built with</em></span>
+        <img src="https://cdn.simpleicons.org/go/d4ff45" alt="Go" />
+        <span>Go</span>
+        <img src="https://cdn.simpleicons.org/python/d4ff45" alt="Python" />
+        <span>Python</span>
+        <svg class="m-svg" viewBox="0 0 24 24" fill="currentColor" aria-label="AWS"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg>
+        <span>AWS</span>
+        <svg class="m-svg" viewBox="0 0 24 24" fill="currentColor" aria-label="GCP"><path d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c.053-.02-.055.013 0 0-3.875 2.551-3.922 8.11-.247 10.941l.006-.007-.007.03a6.717 6.717 0 0 0 4.077 1.356h5.173l.03.03h5.192c6.687.053 9.376-8.605 3.835-12.35a9.365 9.365 0 0 0-2.821-4.552l-.043.043.006-.05A9.344 9.344 0 0 0 12.19 2.38zm-.358 4.146c1.244-.04 2.518.368 3.486 1.15a5.186 5.186 0 0 1 1.862 4.078v.518c3.53-.07 3.53 5.262 0 5.193h-5.193l-.008.009v-.04H6.785a2.59 2.59 0 0 1-1.067-.23h.001a2.597 2.597 0 1 1 3.437-3.437l3.013-3.012A6.747 6.747 0 0 0 8.11 8.24c.018-.01.04-.026.054-.023a5.186 5.186 0 0 1 3.67-1.69z"/></svg>
+        <span>GCP</span>
+        <img src="https://cdn.simpleicons.org/kubernetes/d4ff45" alt="Kubernetes" />
+        <span>Kubernetes</span>
+        <img src="https://cdn.simpleicons.org/docker/d4ff45" alt="Docker" />
+        <span>Docker</span>
+        <img src="https://cdn.simpleicons.org/grafana/d4ff45" alt="Grafana" />
+        <span>Grafana</span>
+        <img src="https://cdn.simpleicons.org/terraform/d4ff45" alt="Terraform" />
+        <span>Terraform</span>
+        <img src="https://cdn.simpleicons.org/redis/d4ff45" alt="Redis" />
+        <span>Redis</span>
+        <img src="https://cdn.simpleicons.org/mysql/d4ff45" alt="MySQL" />
+        <span>MySQL</span>
+        <span><em class="serif-i">& curiosity</em></span>
+      </div>
+      <div class="marquee-row" aria-hidden="true">
+        <span><em class="serif-i">Built with</em></span>
+        <img src="https://cdn.simpleicons.org/go/d4ff45" alt="" />
+        <span>Go</span>
+        <img src="https://cdn.simpleicons.org/python/d4ff45" alt="" />
+        <span>Python</span>
+        <svg class="m-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg>
+        <span>AWS</span>
+        <svg class="m-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c.053-.02-.055.013 0 0-3.875 2.551-3.922 8.11-.247 10.941l.006-.007-.007.03a6.717 6.717 0 0 0 4.077 1.356h5.173l.03.03h5.192c6.687.053 9.376-8.605 3.835-12.35a9.365 9.365 0 0 0-2.821-4.552l-.043.043.006-.05A9.344 9.344 0 0 0 12.19 2.38zm-.358 4.146c1.244-.04 2.518.368 3.486 1.15a5.186 5.186 0 0 1 1.862 4.078v.518c3.53-.07 3.53 5.262 0 5.193h-5.193l-.008.009v-.04H6.785a2.59 2.59 0 0 1-1.067-.23h.001a2.597 2.597 0 1 1 3.437-3.437l3.013-3.012A6.747 6.747 0 0 0 8.11 8.24c.018-.01.04-.026.054-.023a5.186 5.186 0 0 1 3.67-1.69z"/></svg>
+        <span>GCP</span>
+        <img src="https://cdn.simpleicons.org/kubernetes/d4ff45" alt="" />
+        <span>Kubernetes</span>
+        <img src="https://cdn.simpleicons.org/docker/d4ff45" alt="" />
+        <span>Docker</span>
+        <img src="https://cdn.simpleicons.org/grafana/d4ff45" alt="" />
+        <span>Grafana</span>
+        <img src="https://cdn.simpleicons.org/terraform/d4ff45" alt="" />
+        <span>Terraform</span>
+        <img src="https://cdn.simpleicons.org/redis/d4ff45" alt="" />
+        <span>Redis</span>
+        <img src="https://cdn.simpleicons.org/mysql/d4ff45" alt="" />
+        <span>MySQL</span>
+        <span><em class="serif-i">& curiosity</em></span>
+      </div>
+    </div>
+  </section>
 
-					<p id="settings-note"></p>
-				</div>
+  <!-- ============ ABOUT (Bento) ============ -->
+  <section id="about" class="bento-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-text">/ About</span>
+        <span class="label-line"></span>
+      </div>
 
-				<div class="right-column">
+      <h2 class="section-h">
+        Built like a <em class="serif-i">backend</em> —
+        <br/>simple, reliable, <em class="serif-i">fast</em>.
+      </h2>
 
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do</h3>
-							<p>I build new projects just to tickle my brain and build some exciting innovations</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <div class="bento">
+        <div class="b-card b-bio">
+          <div class="b-kicker">/ The story</div>
+          <p>
+            I'm a <strong>Computer Engineering</strong> student at SRM Institute graduating in May 2026
+            (CGPA 9.4). Right now I'm at <strong>Fox Corporation</strong> writing Go and Python services
+            that move terabytes of video around the globe.
+          </p>
+          <p>
+            I'm obsessed with how things <em class="serif-i">actually</em> run in
+            production — observability, automation, and that beautiful moment when a
+            500ms latency drops to 12ms.
+          </p>
+        </div>
 
-	<section class="s2">
-		<div class="main-container">
+        <div class="b-card b-stat">
+          <div class="b-stat-num"><span data-count="9.4">0</span></div>
+          <div class="b-stat-label">CGPA / 10</div>
+          <div class="b-stat-foot">SRM · B.Tech CSE</div>
+        </div>
 
-			<div class="about-wrapper">
-				<div class="about-me">
-					<h4>More about me</h4>
+        <div class="b-card b-stat b-stat-2">
+          <div class="b-stat-num"><span data-count="500">0</span>+</div>
+          <div class="b-stat-label">LeetCode solved</div>
+          <div class="b-stat-foot">Rating 1200+</div>
+        </div>
 
-					<p>I am student at SRM currently pursuing my Btech CSE in specialization of Big Data Analytics</p>
+        <div class="b-card b-photo">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Server racks glowing in a data center" loading="lazy" />
+          <div class="b-photo-cap"><em class="serif-i">Where</em> the magic happens.</div>
+        </div>
 
-					<p>While I keep myself busy learning various programming languages and constantly developing various projects, I also spend some time working in Liftoff club </p>
+        <div class="b-card b-now">
+          <div class="b-kicker"><span class="now-dot"></span> Now playing</div>
+          <ul class="now-list">
+            <li><span>•</span> Shipping video pipelines @ <strong>Fox</strong></li>
+            <li><span>•</span> Building MCP servers for AI test automation</li>
+            <li><span>•</span> Studying for <strong>AWS SA Pro</strong></li>
+            <li><span>•</span> Reading <em class="serif-i">Designing Data-Intensive Applications</em></li>
+          </ul>
+        </div>
 
+        <div class="b-card b-loc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div class="b-kicker">Based in</div>
+            <div class="b-loc-city">Chennai, India</div>
+            <div class="b-loc-time" id="locTime">—</div>
+          </div>
+        </div>
 
-					<hr>
+        <div class="b-card b-leetcode">
+          <div class="b-kicker">/ DSA grind</div>
+          <div class="lc-bars">
+            <span style="--h: 65%"></span><span style="--h: 80%"></span><span style="--h: 45%"></span>
+            <span style="--h: 92%"></span><span style="--h: 70%"></span><span style="--h: 88%"></span>
+            <span style="--h: 55%"></span><span style="--h: 95%"></span><span style="--h: 78%"></span>
+            <span style="--h: 60%"></span><span style="--h: 85%"></span><span style="--h: 72%"></span>
+          </div>
+          <div class="b-stat-foot">500+ problems, mostly graphs &amp; systems</div>
+        </div>
 
-					<h4>TOP EXPERTISE</h4>
+        <div class="b-card b-quote">
+          <div class="quote-mark">"</div>
+          <p>If it isn't <em class="serif-i">monitored</em>, it's broken.<br/>If it isn't <em class="serif-i">automated</em>, it'll break.</p>
+          <div class="b-stat-foot">— a thing I keep telling junior devs</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<p>Data Scientist with primary focus on Statistical Analytics and OCI data science: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+  <!-- ============ WORK / EXPERIENCE ============ -->
+  <section id="work" class="work-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-text">/ Experience</span>
+        <span class="label-line"></span>
+      </div>
 
-					<div id="skills">
-						<ul>
-							<li>Python</li>
-							<li>Java</li>
-							<li>JavaScript</li>
-							<li>Rust</li>
-							<li>MySql</li>
-						</ul>
+      <h2 class="section-h">
+        Places I've <em class="serif-i">shipped</em>
+        <br/>real systems.
+      </h2>
 
-						<ul>
-							<li>TensorFlow</li>
-							<li>Pytorch</li>
-							<li>Oracle</li>
-							<li>Linux</li>
-							<li>HTML/CSS</li>
-						</ul>
+      <div class="exp-list">
+        <article class="exp-item" data-cursor="hover">
+          <div class="exp-year"><span>2025 —</span><span>2026</span></div>
+          <div class="exp-body">
+            <div class="exp-top">
+              <h3>Fox Corporation</h3>
+              <span class="exp-role">Software Engineering Intern · Remote</span>
+            </div>
+            <p class="exp-lead">
+              Engineering production video infrastructure that moves millions of
+              minutes of content. Where my Go + AWS reflexes got sharp.
+            </p>
+            <ul class="exp-bullets">
+              <li>Built large-scale <strong>Go &amp; Python pipelines</strong> on AWS (Transcribe, S3, Lambda, MediaConvert) for ingestion, transcoding and orchestration.</li>
+              <li>Designed internal <strong>MCP servers</strong> with A2A frameworks for AI-driven test automation and faster regression coverage.</li>
+              <li>Built a <strong>caption offset correction</strong> system using Whisper AI — auto-fixed audio-subtitle drift across the media catalog.</li>
+              <li>Shipped an <strong>LLM caption validation</strong> tool catching timing, profanity and spelling issues — <strong>+30%</strong> subtitle accuracy.</li>
+              <li>Wrote <strong>AI agents for CloudWatch</strong> — log retrieval, anomaly detection, RCA &amp; auto-remediation.</li>
+              <li>Cross-BU S3 migration with Go routines, checksums, retries &amp; DynamoDB audit. <strong>OAuth 2.0</strong> across internal APIs.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Go</span><span>Python</span><span>AWS</span><span>Whisper</span><span>DynamoDB</span><span>MCP</span><span>Grafana</span>
+            </div>
+          </div>
+          <div class="exp-arrow">→</div>
+        </article>
 
-					</div>
+        <article class="exp-item" data-cursor="hover">
+          <div class="exp-year"><span>2025</span><span>Jul – Oct</span></div>
+          <div class="exp-body">
+            <div class="exp-top">
+              <h3>Wingify</h3>
+              <span class="exp-role">Software Engineering Intern · Remote</span>
+            </div>
+            <p class="exp-lead">
+              Made the platform behind <strong>VWO</strong> a tiny bit smarter — and
+              a lot more automated.
+            </p>
+            <ul class="exp-bullets">
+              <li>Built a <strong>Spring AI translation-checking</strong> service that auto-flags incorrect UI text across user flows.</li>
+              <li>Contributed to <strong>automated segment-verification</strong> using LLM-generated variation templates for VWO campaigns.</li>
+              <li>Containerized test environments with Docker + Jenkins for staging/CI parity.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Spring AI</span><span>Java</span><span>Docker</span><span>Jenkins</span><span>LLMs</span>
+            </div>
+          </div>
+          <div class="exp-arrow">→</div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-				</div>
+  <!-- ============ PROJECTS BENTO ============ -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span class="label-text">/ Selected work</span>
+        <span class="label-line"></span>
+      </div>
 
-				
-				<div class="social-links">
-					<img id="social_img" src="images/pics/resume.jpg">
-					<h3>Find me on my socials & certifications </h3>
-					<div class="href-links">
-					<a href="https://twitter.com/deveshruttala">
-                        <img src="./images/icon/twitter.png" height="30px" width="30px" alt="Twitter">
-                    </a>
-					<a href="https://www.linkedin.com/in/devesh-ruttala/">
-                        <img src="./images/icon/linkedin_black_logo_icon_147114.png" height="30px" width="30px" alt="LinkedIn">
-                    </a>
-					<a href="https://www.credly.com/users/devesh-ruttala">
-						<img src="./images/icon/credly_logo_icon_247258.png"  height="30px" width="30px" alt="Angel list">
-					</a>
-					<a href="https://github.com/deveshruttala">
-						<img src="./images/icon/github-logo_icon-icons.com_73546.png"  height="30px" width="30px" alt="GitHub">
-					</a>
-					<a href="https://www.coursera.org/user/68da47286f4ba9bfdab3bad113d5eaa8">
-						<img src="./images/icon/coursera.png" height="60px" width="60px" alt="coursera">
-					</a>
-					<a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=ECB316074A86227CF4ACCF6D4B68A916C2C1A4F92D06D1A9C1884E2B6BEF1423">
-						<img src="./images/icon/294664_oracle_icon.png" height="60px" width="60px" alt="Oracle">
-					</a>
-					
-					</div>
-				</div>
-				
+      <h2 class="section-h">
+        Things I built
+        <br/>because I <em class="serif-i">wanted</em> to.
+      </h2>
 
-		</div>
-		
-	</section>
+      <div class="proj-grid">
+        <article class="proj proj-lg" data-cursor="view">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?auto=format&fit=crop&w=1100&q=80" alt="Scanning an artistic QR code with a phone" loading="lazy" />
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-num">01</span>
+              <span class="proj-year">2024</span>
+            </div>
+            <h3>Artistic QR · URL Shortener</h3>
+            <p>A high-throughput URL shortener with sharded key storage and optimistic locking, paired with <em class="serif-i">artistic QR codes</em> generated by Stable Diffusion on SageMaker. Real-world scan engagement went up by <strong>40%</strong>.</p>
+            <div class="proj-stack">
+              <span>Python</span><span>Flask</span><span>AWS SageMaker</span><span>S3</span><span>MySQL</span>
+            </div>
+          </div>
+        </article>
 
-	<section class="s1">
-		<a name="works"></a>
+        <article class="proj" data-cursor="view">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=80" alt="Server racks for cloud-native backend" loading="lazy" />
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-num">02</span>
+              <span class="proj-year">2024</span>
+            </div>
+            <h3>Scalable Contact Hub</h3>
+            <p>Cloud-native contact manager — Spring Boot on AWS with ALB + Auto Scaling, RDS + S3, Docker, GitHub Actions CI/CD.</p>
+            <div class="proj-stack">
+              <span>Java</span><span>Spring Boot</span><span>AWS</span><span>Docker</span>
+            </div>
+          </div>
+        </article>
 
-		<div class="main-container">
-			<h3 style="text-align: center;">Some of my past works</h3>
+        <article class="proj" data-cursor="view">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=900&q=80" alt="Terminal interface" loading="lazy" />
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-num">03</span>
+              <span class="proj-year">2023</span>
+            </div>
+            <h3>TermiChatX</h3>
+            <p>Secure terminal-based group chat — sockets with AES-256/RSA encryption, multithreaded clients, Redis pub/sub, MySQL persistence. <em class="serif-i">Talk like it's the 90s, encrypt like it's 2030.</em></p>
+            <div class="proj-stack">
+              <span>Python</span><span>Sockets</span><span>Redis</span><span>FastAPI</span>
+            </div>
+          </div>
+        </article>
 
-			<div class="post-wrapper">
+        <article class="proj proj-wide" data-cursor="view">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="CloudWatch-style analytics dashboards" loading="lazy" />
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-num">04</span>
+              <span class="proj-year">2026</span>
+              <span class="badge-new">Live</span>
+            </div>
+            <h3>CloudWatch AI Agents</h3>
+            <p>Internal agents that read CloudWatch like a senior SRE — pull logs, detect anomalies, trace root cause, suggest fixes, and (carefully) apply remediations. Cuts incident MTTR from hours to minutes.</p>
+            <div class="proj-stack">
+              <span>Python</span><span>AWS</span><span>LLMs</span><span>Grafana</span><span>MCP</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/800px-HackerRank_Icon-1000px.png" height="50px" width="50px">
-						<div class="post-preview">
-							<h6 class="post-title">HackerRank</h6>
-							<p class="post-intro">Welcome to my HackerRank profile!, With a strong focus on honing my coding skills,I have achieved significant milestones throughout my HackerRank journey.</p>
-							<a href="https://www.hackerrank.com/profile/dr3282">Visit Page</a>
-						</div>
-					</div>
-				</div>
+  <!-- ============ STACK / Logo grid ============ -->
+  <section id="stack" class="stack-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">05</span>
+        <span class="label-text">/ Toolbox</span>
+        <span class="label-line"></span>
+      </div>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/cert.png">
-						<div class="post-preview">
-							<h6 class="post-title">My certifications and internships</h6>
-							<p class="post-intro">I hold variety of certifications from leading organisations ,showcasing expertise in programming languages and enhancing my career prospects in data science. </p>
-							<a href="https://drive.google.com/drive/folders/1KoTr_8VxaX4Ooy9BFN1T--_JGHWGWw8D?usp=sharing">View</a>
-						</div>
-					</div>
-				</div>
+      <h2 class="section-h">
+        The tools I <em class="serif-i">reach for</em>
+        <br/>without thinking.
+      </h2>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/pics/ml.jpg">
-						<div class="post-preview">
-							<h6 class="post-title">Projects</h6>
-							<p class="post-intro">View my projects on social media, forms, machine-learning program and my internship work that I have personally worked on.</p>
-							<a href="https://github.com/deveshruttala?tab=repositories">Visit my projects</a>
-						</div>
-					</div>
-				</div>
+      <div class="stack-cols">
+        <div class="stack-col">
+          <div class="stack-col-head">Languages</div>
+          <div class="logo-grid">
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/go/ffffff" alt="Go"/><span>Go</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/python/ffffff" alt="Python"/><span>Python</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/openjdk/ffffff" alt="Java"/><span>Java</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/javascript/ffffff" alt="JavaScript"/><span>JS</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/gnubash/ffffff" alt="Bash"/><span>Bash</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/mysql/ffffff" alt="SQL"/><span>SQL</span></div>
+          </div>
+        </div>
 
-			</div>
-		</div>
-	</section>
+        <div class="stack-col">
+          <div class="stack-col-head">Backend</div>
+          <div class="logo-grid">
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/go/ffffff" alt="Fiber"/><span>Fiber</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/fastapi/ffffff" alt="FastAPI"/><span>FastAPI</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/django/ffffff" alt="Django"/><span>Django</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/spring/ffffff" alt="Spring"/><span>Spring</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/nodedotjs/ffffff" alt="Node.js"/><span>Node</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/react/ffffff" alt="React"/><span>React</span></div>
+          </div>
+        </div>
 
+        <div class="stack-col">
+          <div class="stack-col-head">Cloud &amp; Infra</div>
+          <div class="logo-grid">
+            <div class="logo-tile" data-cursor="hover">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-label="AWS"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg>
+              <span>AWS</span>
+            </div>
+            <div class="logo-tile" data-cursor="hover">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-label="Google Cloud"><path d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c.053-.02-.055.013 0 0-3.875 2.551-3.922 8.11-.247 10.941l.006-.007-.007.03a6.717 6.717 0 0 0 4.077 1.356h5.173l.03.03h5.192c6.687.053 9.376-8.605 3.835-12.35a9.365 9.365 0 0 0-2.821-4.552l-.043.043.006-.05A9.344 9.344 0 0 0 12.19 2.38zm-.358 4.146c1.244-.04 2.518.368 3.486 1.15a5.186 5.186 0 0 1 1.862 4.078v.518c3.53-.07 3.53 5.262 0 5.193h-5.193l-.008.009v-.04H6.785a2.59 2.59 0 0 1-1.067-.23h.001a2.597 2.597 0 1 1 3.437-3.437l3.013-3.012A6.747 6.747 0 0 0 8.11 8.24c.018-.01.04-.026.054-.023a5.186 5.186 0 0 1 3.67-1.69z"/></svg>
+              <span>GCP</span>
+            </div>
+            <div class="logo-tile" data-cursor="hover">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-label="Oracle"><path d="M16.412 4.412h-8.82a7.588 7.588 0 0 0-.008 15.176h8.828a7.588 7.588 0 0 0 0-15.176zm-.193 12.502H7.786a4.915 4.915 0 0 1 0-9.828h8.433a4.914 4.914 0 1 1 0 9.828z"/></svg>
+              <span>OCI</span>
+            </div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/kubernetes/ffffff" alt="Kubernetes"/><span>K8s</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/docker/ffffff" alt="Docker"/><span>Docker</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/terraform/ffffff" alt="Terraform"/><span>Terraform</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/jenkins/ffffff" alt="Jenkins"/><span>Jenkins</span></div>
+          </div>
+        </div>
 
-	<section class="s1">
-		<a name="works"></a>
+        <div class="stack-col">
+          <div class="stack-col-head">Ops &amp; data</div>
+          <div class="logo-grid">
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/grafana/ffffff" alt="Grafana"/><span>Grafana</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/datadog/ffffff" alt="Datadog"/><span>Datadog</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/githubactions/ffffff" alt="GH Actions"/><span>GH Actions</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/postman/ffffff" alt="Postman"/><span>Postman</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/redis/ffffff" alt="Redis"/><span>Redis</span></div>
+            <div class="logo-tile" data-cursor="hover"><img src="https://cdn.simpleicons.org/mysql/ffffff" alt="MySQL"/><span>MySQL</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<div class="main-container">
-			<h3 style="text-align: center;">My DAA Portfolio</h3>
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">06</span>
+        <span class="label-text">/ Contact</span>
+        <span class="label-line"></span>
+      </div>
 
-			<div class="post-wrapper">
+      <h2 class="contact-h">
+        <span class="reveal-line"><span>Got an <em class="serif-i">infra</em> problem?</span></span>
+        <span class="reveal-line"><span>A backend that needs</span></span>
+        <span class="reveal-line"><span><em class="serif-i">love</em>? Let's talk.</span></span>
+      </h2>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/pics/elab.png" height="50px" width="50px">
-						<div class="post-preview">
-							<h6 class="post-title">SRM E-Lab</h6>
-							<p class="post-intro">Welcome to my E-Lab profile!, With a strong focus on honing my coding skills,I have achieved significant milestones throughout my E-Lab journey.</p>
-							<a href="images/pics/srm-elab.png">Visit My E-Lab</a>
-						</div>
-					</div>
-				</div>
+      <a href="mailto:deveshruttala@gmail.com" class="contact-mail magnetic" data-cursor="hover">
+        <span class="contact-mail-text">deveshruttala@gmail.com</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/pics/nptel.jpg"  height="50px" width="50px">
-						<div class="post-preview">
-							<h6 class="post-title">My DAA Nptel certifications</h6>
-							<p class="post-intro">Certified by NPTEL in Design Analysis and Algorithms, demonstrating proficiency in advanced problem-solving techniques and algorithmic thinking for effective software design and development. </p>
-							<a href="https://drive.google.com/file/d/15PLNpIhXKr5FlelaVHbwmqRcW3zDzovf/view?usp=sharing">View</a>
-						</div>
-					</div>
-				</div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/devesh-ruttala/" target="_blank" rel="noopener" class="c-link" data-cursor="hover">
+          <span class="c-link-label">LinkedIn · preferred</span>
+          <span class="c-link-val">devesh-ruttala</span>
+        </a>
+        <a href="https://github.com/deveshruttala" target="_blank" rel="noopener" class="c-link" data-cursor="hover">
+          <span class="c-link-label">GitHub</span>
+          <span class="c-link-val">@deveshruttala</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/pics/knap.png"  height="50px" width="50px">
-						<div class="post-preview">
-							<h6 class="post-title">OPTIMIZING AIRLINE LUGGAGE</h6>
-							<p class="post-intro">Crafted an innovative solution for optimizing airline luggage with a Knapsack algorithm, ensuring efficient packing and maximizing space utilization for hassle-free travel experiences.</p>
-							<a href="https://docs.google.com/presentation/d/1IzKpW8fZlHD-j-W5D6BOxSMJCLW1xDnG/edit?usp=sharing&ouid=112802842629606684558&rtpof=true&sd=true">Visit my project</a>
-						</div>
-					</div>
-				</div>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-l">
+        <div class="footer-sig serif-i">— Devesh</div>
+        <div class="footer-meta">Chennai · IST · <span id="footTime">—</span></div>
+      </div>
+      <div class="footer-r">
+        <div class="footer-meta">© 2026 · Built with HTML, CSS &amp; vanilla JS.</div>
+        <a href="#top" class="footer-top" data-cursor="hover">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
 
-			</div>
-		</div>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-			<a href=""></a>
-			<h3 style="text-align: center;">Get In Touch</h3>
-
-			<form id="contact-form">
-				<a name="contact"></a>
-
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
-		</div>
-	</section> 
-
-	<script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
